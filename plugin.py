@@ -38,7 +38,7 @@ def browse():
         xbmcplugin.endOfDirectory(plugin.handle, succeeded=False)
         return
 
-    current_path = args['path'][0]
+    current_path = args['path'][0].decode("hex")
     if not current_path.endswith('/'):
         current_path += '/'
 
