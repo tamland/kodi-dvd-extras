@@ -53,7 +53,7 @@ def browse():
             li.setArt({'fanart': args['fanart'][0]})
         path = os.path.join(current_path, name)
         params = {
-            b'path': path,
+            b'path': path.encode("hex"),
             b'title': args['title'][0],
             b'fanart': args['fanart'][0],
         }
