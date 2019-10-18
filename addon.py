@@ -33,7 +33,7 @@ def main():
     xbmc.log("[%s] opening '%s'" % (addon.getAddonInfo('id'), extras_dir), xbmc.LOGDEBUG)
 
     params = {
-        'path': extras_dir,
+        'path': extras_dir.encode("hex"),
         'isroot': 'true',
         'title': sys.listitem.getLabel(),
         'fanart': sys.listitem.getProperty('fanart_image'),
