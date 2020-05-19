@@ -22,7 +22,7 @@ import routing
 import xbmcaddon
 import xbmcplugin
 from xbmcgui import Dialog, ListItem
-from urllib import urlencode, quote_plus
+from urllib.parse import urlencode, quote_plus
 
 
 plugin = routing.Plugin()
